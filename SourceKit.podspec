@@ -1,0 +1,31 @@
+#
+# Be sure to run `pod lib lint SourceKit.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+#
+
+Pod::Spec.new do |s|
+s.name             = "SourceKit"
+s.version          = "1.0.6"
+s.summary          = "The SourceKit Library is the iOS SDK for use with the Huq physical analytics products."
+
+s.description      = <<-DESC
+SourceKit by Huq is the fastest way to find insights and be inspired by what your users get up to in the physical world, using Huq's Physical Analytics platform for mobile app publishers.
+
+-Learn when and how your users shop, work and relax
+-Build and manage insights using Huq's analytics tools
+-Use Huq to power campaigns and personalise content
+DESC
+
+s.homepage         = "https://github.com/huq-analytics/sourcekit-ios"
+s.license          = 'All rights reserved'
+s.author           = { "Huq Industries" => "isambard@huq.io" }
+s.source           = { :git => "https://bitbucket.org/huqindustries/sourcekit_ios_pod.git", :tag => "1.0.6" }
+
+s.platform     = :ios, '7.0'
+s.requires_arc = true
+s.ios.vendored_frameworks = 'Pod/Frameworks/SourceKit.framework'
+
+end

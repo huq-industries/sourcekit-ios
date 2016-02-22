@@ -1,0 +1,25 @@
+{
+  "name": "SourceKitPod",
+  "version": "0.1.0",
+  "summary": "A short description of SourceKitPod.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SourceKitPod",
+  "license": "MIT",
+  "authors": {
+    "Isambard Poulson": "isambard@huq.io"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SourceKitPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SourceKitPod": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
