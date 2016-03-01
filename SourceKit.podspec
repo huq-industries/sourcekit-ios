@@ -26,6 +26,6 @@ s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios-
 
 s.platform     = :ios, '7.0'
 s.requires_arc = true
-s.ios.vendored_frameworks = 'Pod/Frameworks/SourceKit.framework'
+s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKit.framework'
 
 end

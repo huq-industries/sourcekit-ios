@@ -1,6 +1,0 @@
-framework module SourceKitPod {
-  umbrella header "SourceKitPod-umbrella.h"
-
-  export *
-  module * { export * }
-}
