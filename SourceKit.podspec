@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "SourceKit"
-s.version          = "1.0.11"
+s.version          = "1.0.12"
 s.summary          = "The SourceKit Library is the iOS SDK for use with the Huq physical analytics products."
 
 s.description      = <<-DESC
@@ -19,10 +19,10 @@ SourceKit by Huq is the fastest way to find insights and be inspired by what you
 -Use Huq to power campaigns and personalise content
 DESC
 
-s.homepage         = "https://github.com/huq-analytics/sourcekit-ios"
+s.homepage         = "https://github.com/huq-industries/sourcekit-ios"
 s.license          = 'All rights reserved'
 s.author           = { "Huq Industries" => "isambard@huq.io" }
-s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag => "1.0.11" }
+s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag => "1.0.12" }
 
 s.platform     = :ios, '7.0'
 s.requires_arc = true
