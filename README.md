@@ -35,7 +35,7 @@ these steps:
 
 2. Add the bridging header to your Swift compliler. Select the
 build settings tab for your project and then search for 'Swift Compiler'.
-Under the 'Swift Compiler - Code Generation' section, add your bridging header
+Under the 'Swift Compiler - Code Generation' section, add the path to your bridging header
 to the 'Objective-C Bridging Header' field. Check the location of the header to ensure you get the path right. If it is in
 the root directory, the path will simply be 'ProjectName-Bridging-Header.h'. If
 it is in the project subdirectory, the path will be
