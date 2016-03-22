@@ -53,7 +53,7 @@ application(application: UIApplication, didFinishLaunchingWithOptions
 launchOptions: [NSObject: AnyObject]?) -> Bool` method:
 
 ```swift
-// replace "API_Key" with the API key that you have received from Huq
+// replace <API_Key> with the API key that you have received from Huq
 HISourceKit.sharedKit().recordWithAPIKey("<API_Key>", inDebugMode: false)
 ```
 
@@ -68,7 +68,7 @@ following line:
 And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` method, just add the following:
 
 ```objective-c
-// replace "API_Key" with the API key that you have received from Huq
+// replace <API_Key> with the API key that you have received from Huq
 [[HQSourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
 ```
 
