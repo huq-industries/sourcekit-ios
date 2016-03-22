@@ -54,8 +54,7 @@ launchOptions: [NSObject: AnyObject]?) -> Bool` method:
 
 ```swift
 // replace "API_Key" with the API key that you have received from Huq
-HISourceKit.sharedKit().recordWithAPIKey("<API_Key>",
-inDebugMode: false)
+HISourceKit.sharedKit().recordWithAPIKey("<API_Key>", inDebugMode: false)
 ```
 
 #### Objective-C
