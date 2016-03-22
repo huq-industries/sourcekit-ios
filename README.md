@@ -191,3 +191,4 @@ If you have any other questions please reach out to help@huq.io.
 This SourceKit SDK is Copyright 2014-2015 Huq Industries Limited. This SDK is licensed under the Huq Physical Insights Platform Terms of Service, found on the Huq Industries website [here][hq2] (the "License"). You may not use this SDK unless (1) you have registered for an account with Huq, (2) are in possession of a valid API Key from Huq, (3) have agreed the terms of the Licence and (4) are in compliance with the License. Any unauthorised use of this SDK constitutes copyright infringement and violation of law.
 
    [hq1]: <http://dashboard.huq.io>
+   [hq2]: <http://huq.io/legals/service-terms.html>
