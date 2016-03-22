@@ -92,16 +92,19 @@ To make use of location services in the foreground, you need to first configure 
 
 **Foreground only apps**
 
-For apps that access location services in the foreground only, add the key `NSLocationWhenInUseUsageDescription` to your `Info.plist`. Then in your class, `#import <CoreLocation/CoreLocation.h>` as normal, configure `CLLocationManager` as you wish and remember to call `+whenInUseAuthorizationwhen` you're ready to go.
+For apps that access location services in the foreground only, add the key
+`NSLocationWhenInUseUsageDescription` to your `Info.plist`. Then in your class,
+import CoreLocation as normal, configure `CLLocationManager` as you wish and
+remember to call `whenInUseAuthorizationwhen` you're ready to go.
 
 **Foreground and background apps**
 
-For apps that access location services in the background too, add the key `NSLocationAlwaysUsageDescription` to your `Info.plist`. Then in your class, `#import <CoreLocation/CoreLocation.h>` as normal, configure `CLLocationManager` as you wish and remember to call `+requestAlwaysAuthorization` when you're ready to go.
+For apps that access location services in the background too, add the key `NSLocationAlwaysUsageDescription` to your `Info.plist`. Then in your class, import CoreLocation as normal, configure `CLLocationManager` as you wish and remember to call `requestAlwaysAuthorization` when you're ready to go.
 
 ---
 
 ### Testing
-SourceKit.sharedKit().logCustomEventWithTags(tags)
+
 SourceKit from Huq makes use of APIs that are not available in the simulator. To test your integration of the SourceKit framework, set `-inDebugMode:YES` and test **on your device** while **connected to WiFi**.
 
 ---
