@@ -78,7 +78,16 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 
 ### Using location services
 
-Huq Industries' SourceKit SDK, among other things, makes use of location services to generate Physical Insights. Since iOS 8 this has become a little more nuanced, so steps to configure location services in iOS 8+ as follows:
+Huq Industries' SourceKit SDK, among other things, makes use of location
+services to generate Physical Insights. For versions prior to iOS 8, calling 
+```objective-c
+[[HQSourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
+```
+will automatically request the necessary location permissions. If you would
+prefer that this request is made later in the applicaiton flow, then simply
+call this method at that point.
+
+Since iOS 8 this has become a little more nuanced, so steps to configure location services in iOS 8+ as follows:
 
 **Using location services in iOS 8+**
 
