@@ -82,7 +82,7 @@ Huq Industries' SourceKit SDK, among other things, makes use of location service
 
 **Using location services in iOS 8+**
 
-To make use of location services in the foreground, you need to first configure your project’s `Info.plist`.
+To make use of location services, you need to first configure your project’s `Info.plist`.
 
 * right-click on the plist inspector, and select add row
 * in the key field, add the key for the mode you require
@@ -176,7 +176,6 @@ Calling `stopRecording` will destroy the instance of SourceKit that you original
 Huq Insights are refreshed *at least* once every 24 hours. If after logging in to your Insights Dashboard after 24 hours you cannot see any data, then please check the following:
 
 * that you have been testing on a device
-* that your device OS version is iOS 8.0+
 * that you have enabled location services
 * that you have been testing over WiFi
 
