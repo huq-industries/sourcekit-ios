@@ -69,7 +69,7 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 
 ```objective-c
 // replace <API_Key> with the API key that you have received from Huq
-[[HQSourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
+[[HISourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
 ```
 
 **And that's it!**  Check that you have `location services` enabled correctly, and see additional usage information below for advanced implementations. 
@@ -81,7 +81,7 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 Huq Industries' SourceKit SDK, among other things, makes use of location
 services to generate Physical Insights. For versions prior to iOS 8, calling 
 ```objective-c
-[[HQSourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
+[[HISourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
 ```
 will automatically request the necessary location permissions. If you would
 prefer that this request is made later in the applicaiton flow, then simply
