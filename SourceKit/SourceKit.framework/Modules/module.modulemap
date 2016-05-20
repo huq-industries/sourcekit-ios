@@ -1,6 +1,0 @@
-framework module SourceKit {
-  umbrella header "SourceKit.h"
-
-  export *
-  module * { export * }
-}
