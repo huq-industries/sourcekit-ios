@@ -55,5 +55,4 @@
 
 - (void) logCustomEventWithTags:(NSArray *)tags;
 
-
 @end
