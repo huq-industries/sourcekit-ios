@@ -28,4 +28,8 @@ s.platform     = :ios, '7.0'
 s.requires_arc = true
 s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKit.framework'
 
+s.resource_bundles = {
+    'SourceKit' => ['SourceKit/SourceKit.framework/Info.plist']
+    }
+
 end

@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[HISourceKit sharedKit] recordWithAPIKey:@"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx" inDebugMode:YES];
+    [[HISourceKit sharedKit] recordWithAPIKey:@"1b7e41c0-8c66-4af5-9a15-372d456f1893" inDebugMode:YES];
     // Override point for customization after application launch.
     return YES;
 }
