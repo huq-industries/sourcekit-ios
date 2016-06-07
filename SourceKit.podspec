@@ -22,7 +22,7 @@ DESC
 s.homepage         = "https://github.com/huq-industries/sourcekit-ios"
 s.license          = 'All rights reserved'
 s.author           = { "Huq Industries" => "isambard@huq.io" }
-s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag => "1.0.16" }
+s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag=>s.version.to_s}
 
 s.platform     = :ios, '7.0'
 s.requires_arc = true
