@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "SourceKit"
-s.version          = "1.0.16"
+s.version          = "1.0.17"
 s.summary          = "The SourceKit Library is the iOS SDK for use with the Huq physical analytics products."
 
 s.description      = <<-DESC
@@ -22,14 +22,14 @@ DESC
 s.homepage         = "https://github.com/huq-industries/sourcekit-ios"
 s.license          = 'All rights reserved'
 s.author           = { "Huq Industries" => "isambard@huq.io" }
-s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag => "1.0.14" }
+s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag => "1.0.16" }
 
 s.platform     = :ios, '7.0'
 s.requires_arc = true
 s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKit.framework'
 
 s.resource_bundles = {
-    'SourceKit' => ['SourceKit/SourceKit.framework/Info.plist']
+    'SourceKit' => ['SourceKit/Frameworks/SourceKit.framework/Info.plist']
     }
 
 end
