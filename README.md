@@ -104,7 +104,7 @@ To make use of location services, you need to first configure your project’s `
 For apps that access location services in the foreground only, add the key
 `NSLocationWhenInUseUsageDescription` to your `Info.plist`. Then in your class,
 import CoreLocation as normal, configure `CLLocationManager` as you wish and
-remember to call `whenInUseAuthorizationwhen` you're ready to go.
+remember to call `requestWhenInUseAuthorization` you're ready to go.
 
 **Foreground and background apps**
 
