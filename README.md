@@ -97,7 +97,7 @@ To make use of location services, you need to first configure your project’s `
 * in the key field, add the key for the mode you require
 * say why your app makes use of location services
 
-[![alt text](https://huq.io/assets/misc/HQ_foreground2.png)]
+[![alt text](https://huq.io/assets/misc/HQ_foreground2.png)]("Adding Info.plist keys")
 
 **Foreground only apps**
 
