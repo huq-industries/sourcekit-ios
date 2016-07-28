@@ -175,7 +175,7 @@ HISourceKit.sharedKit().stopRecording()
 [[HISourceKit sharedKit] stopRecording];
 ```
 
-Calling `stopRecording` will destroy the instance of SourceKit that you originally created by calling `recordWithAPIKey:inDebugMode:`.  If you wish to restart SourceKit at any time, simply call `recordWithAPIKey:inDebugMode:` again as you did the first time.
+Calling `stopRecording` will stop SourceKit from submitting any data updates.  If you wish to restart SourceKit at any time, simply call `recordWithAPIKey:inDebugMode:` again as you did the first time.
 
 ***
 
