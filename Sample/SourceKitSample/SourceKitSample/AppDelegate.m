@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Substitute your API Key here
-    [[HISourceKit sharedKit] recordWithAPIKey:@"1b7e41c0-8c66-4af5-9a15-372d456f1893" inDebugMode:YES];
+    [[HISourceKit sharedKit] recordWithAPIKey:@"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" inDebugMode:YES];
     
     return YES;
 }
