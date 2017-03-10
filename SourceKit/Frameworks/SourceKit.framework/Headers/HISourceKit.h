@@ -10,6 +10,8 @@
 
 @interface HISourceKit : NSObject
 
+extern NSString * const kHuqEndpoint;
+extern NSString * const kHuqAPIVersion;
 
 /**
  *  Singleton class instance
@@ -30,7 +32,7 @@
  *
  */
 
-- (void) recordWithAPIKey:(NSString *)apiKey inDebugMode:(BOOL)debugMode;
+- (void) recordWithAPIKey:(NSString *)apiKey;
 
 /**
  *
@@ -54,5 +56,21 @@
  */
 
 - (void) logCustomEventWithTags:(NSArray *)tags;
+
+- (void)startAccelerometerUpdates;
+- (void)stopAccelerometerUpdates;
+- (void)buildAccelerometerConstruct;
+- (void)teardownAccelerometerConstruct;
+- (void)startGyroUpdates;
+- (void)stopGyroUpdates;
+- (void)buildGyroConstruct;
+- (void)teardownGyroConstruct;
+- (void)startMagnetometerUpdates;
+- (void)stopMagnetometerUpdates;
+- (void)interpolateOrientation;
+- (void)buildPositionalInterpolationConstruct;
+- (void)teardownPositionalInterpolationConstruct;
+- (void)dispatchSilentPositionalPush;
+- (void)respondToSilentPositionalPush;
 
 @end
