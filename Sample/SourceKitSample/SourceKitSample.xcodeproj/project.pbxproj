@@ -15,6 +15,7 @@
 		00075C7D1C85C34200D57E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00075C7B1C85C34200D57E5F /* LaunchScreen.storyboard */; };
 		00075C881C85C34200D57E5F /* SourceKitSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00075C871C85C34200D57E5F /* SourceKitSampleTests.m */; };
 		00075C931C85C34300D57E5F /* SourceKitSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00075C921C85C34300D57E5F /* SourceKitSampleUITests.m */; };
+		0025F9B91EA6232700651A52 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0025F9B81EA6232700651A52 /* CoreTelephony.framework */; };
 		0052458D1E55C72F009F793B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0052458C1E55C72F009F793B /* CoreLocation.framework */; };
 		0052458F1E55C745009F793B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0052458E1E55C745009F793B /* SystemConfiguration.framework */; };
 		00D552041E55CEA4006179C1 /* SourceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D552031E55CEA4006179C1 /* SourceKit.framework */; };
@@ -54,6 +55,7 @@
 		00075C8E1C85C34200D57E5F /* SourceKitSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourceKitSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00075C921C85C34300D57E5F /* SourceKitSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceKitSampleUITests.m; sourceTree = "<group>"; };
 		00075C941C85C34300D57E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0025F9B81EA6232700651A52 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		0052458C1E55C72F009F793B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0052458E1E55C745009F793B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		00D552031E55CEA4006179C1 /* SourceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKit.framework; path = ../../../SourceKit/Frameworks/SourceKit.framework; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0025F9B91EA6232700651A52 /* CoreTelephony.framework in Frameworks */,
 				00D552041E55CEA4006179C1 /* SourceKit.framework in Frameworks */,
 				0052458F1E55C745009F793B /* SystemConfiguration.framework in Frameworks */,
 				0052458D1E55C72F009F793B /* CoreLocation.framework in Frameworks */,
@@ -110,6 +113,7 @@
 		00075C6C1C85C34200D57E5F /* SourceKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				0025F9B81EA6232700651A52 /* CoreTelephony.framework */,
 				00D552031E55CEA4006179C1 /* SourceKit.framework */,
 				0052458E1E55C745009F793B /* SystemConfiguration.framework */,
 				0052458C1E55C72F009F793B /* CoreLocation.framework */,
