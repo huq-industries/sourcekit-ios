@@ -30,7 +30,7 @@
  *
  */
 
-- (void) recordWithAPIKey:(NSString *)apiKey inDebugMode:(BOOL)debugMode;
+- (void) recordWithAPIKey:(NSString *)apiKey;
 
 /**
  *
