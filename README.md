@@ -16,9 +16,14 @@ SourceKit is available in two versions - SourceKit and SourceKitAds. If you run 
 
 To keep this guide concise, all the examples listed here use the SourceKitAds framework, if you are not running advertisements then simply replace instances of 
 
-Header - ```<SourceKitAds/SourceKitAds.h>``` / Main Class - ```<SourceKitAds/HISourceKit.h>```
+Header : ```<SourceKitAds/SourceKitAds.h>```
+
+Main Class : ```<SourceKitAds/HISourceKit.h>```
+
 with
-Header - ```<SourceKit/SourceKit.h>``` / Main Class - ```<SourceKit/HISourceKit.h>```
+
+Header : ```<SourceKit/SourceKit.h>```
+Main Class : ```<SourceKit/HISourceKit.h>```
 
 ***
 
