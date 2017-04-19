@@ -74,7 +74,7 @@ launchOptions: [NSObject: AnyObject]?) -> Bool` method:
 
 ```swift
 // replace <API_Key> with the API key that you have received from Huq
-HISourceKit.sharedKit().recordWithAPIKey("<API_Key>", inDebugMode: false)
+HISourceKit.sharedKit().recordWithAPIKey("<API_Key>")
 ```
 
 #### Objective-C
@@ -89,7 +89,7 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 
 ```objective-c
 // replace <API_Key> with the API key that you have received from Huq
-[[HISourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
+[[HISourceKit sharedKit] recordWithAPIKey:@“<API_Key>”];
 ```
 
 **And that's it!**  Check that you have `location services` enabled correctly, and see additional usage information below for advanced implementations. 
