@@ -85,7 +85,7 @@ In your `AppDelegate.m` file, import the SourceKit library by adding the
 following line:
 
 ```objective-c
-#import <SourceKitAds/HISourceKit.h>
+#import <SourceKitAds/SourceKitAds.h>
 ```
 And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` method, just add the following:
 
