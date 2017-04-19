@@ -12,7 +12,7 @@ To get started with SourceKit by Huq you'll first need to register and grab an A
 
 ## Which version to use
 
-SourceKit is available in two versions - SourceKit and SourceKitAds. If you run advertising in your application, you should use SourceKitAds as this will enable further enrichment of the data. The SDK will not conflict with other advertising frameworks and will not serve advertisements. Otherwise, you should use SourceKit.
+SourceKit is available in two versions - SourceKit and SourceKitAds. If you run advertising in your application, you should use SourceKitAds as this will enable further enrichment of the data. The SDK will not conflict with other advertising frameworks and will not serve advertisements itself. Otherwise, you should use SourceKit.
 
 To keep this guide concise, all the examples listed here use the SourceKitAds framework, if you are not running advertisements then simply replace instances of 
 
