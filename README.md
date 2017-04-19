@@ -16,13 +16,9 @@ SourceKit is available in two versions - SourceKit and SourceKitAds. If you run 
 
 To keep this guide concise, all the examples listed here use the SourceKitAds framework, if you are not running advertisements then simply replace instances of 
 
-```sh
-<SourceKitAds/SourceKitAds.h>
-```
+Header - ```<SourceKitAds/SourceKitAds.h>``` / Main Class - ```<SourceKitAds/HISourceKit.h>```
 with
-```sh
-<SourceKit/SourceKit.h>
-```
+Header - ```<SourceKit/SourceKit.h>``` / Main Class - ```<SourceKit/HISourceKit.h>```
 
 ***
 
@@ -65,7 +61,7 @@ You should import the SourceKit library in the bridging header by adding the
 following line:
 
 ```objective-c
-#import <SourceKitAds/SourceKitAds.h>
+#import <SourceKitAds/HISourceKit.h>
 ```
 
 In your AppDelegate, add the following line to the `func
@@ -83,7 +79,7 @@ In your `AppDelegate.m` file, import the SourceKit library by adding the
 following line:
 
 ```objective-c
-#import <SourceKitAds/HiSourceKit.h>
+#import <SourceKitAds/HISourceKit.h>
 ```
 And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` method, just add the following:
 
