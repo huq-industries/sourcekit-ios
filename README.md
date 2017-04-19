@@ -10,6 +10,20 @@ Huq Industries Real-world Analytics for mobile apps reveals where your users sho
 
 To get started with SourceKit by Huq you'll first need to register and grab an API key from [Huq Industries' Physical Analytics][hq1] console, then follow the simple steps below.
 
+## Which version to use
+
+SourceKit is available in two versions - SourceKit and SourceKitAds. If you run advertising in your application, you should use SourceKitAds as this will enable further enrichment of the data, this will not conflict with other advertising frameworks and will not serve advertisements. Otherwise, you should use SourceKit.
+
+To keep this guide concise, all the examples listed here use the SourceKitAds framework, if you are not running advertisements then simply replace instances of 
+
+```sh
+<SourceKitAds/SourceKitAds.h>
+```
+with
+```sh
+<SourceKit/SourceKit.h>
+```
+
 ***
 
 ### Install using Cocoapods
@@ -18,6 +32,12 @@ Add the following line to your Podspec and run `pod install`
 
 ```sh
 $ pod 'SourceKit'
+```
+
+for the non-advertising version, include the following instead:
+
+```sh
+$ pod 'SourceKitAds'
 ```
 
 ---
@@ -45,7 +65,7 @@ You should import the SourceKit library in the bridging header by adding the
 following line:
 
 ```objective-c
-#import <SourceKit/SourceKit.h>
+#import <SourceKitAds/SourceKitAds.h>
 ```
 
 In your AppDelegate, add the following line to the `func
@@ -63,7 +83,7 @@ In your `AppDelegate.m` file, import the SourceKit library by adding the
 following line:
 
 ```objective-c
-#import <SourceKit/SourceKit.h>
+#import <SourceKitAds/SourceKitAds.h>
 ```
 And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` method, just add the following:
 
@@ -81,7 +101,7 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 Huq Industries' SourceKit SDK, among other things, makes use of location
 services to generate Physical Insights. For versions prior to iOS 8, calling 
 ```objective-c
-[[HISourceKit sharedKit] recordWithAPIKey:@“<API_Key>” inDebugMode:NO];
+[[HISourceKit sharedKit] recordWithAPIKey:@“<API_Key>”];
 ```
 will automatically request the necessary location permissions. If you would
 prefer that this request is made later in the applicaiton flow, then simply
@@ -142,7 +162,7 @@ HISourceKit.sharedKit().logCustomEventWithTags([userDoingSomething])
 #### Objective-C
 
 ```objective-c
-#import <SourceKit/SourceKit.h>
+#import <SourceKitAds/SourceKitAds.h>
 ```
 ```objective-c
 // Create a String that describes a user action
@@ -169,13 +189,13 @@ HISourceKit.sharedKit().stopRecording()
 #### Objective-C
 
 ```objective-c
-#import <SourceKit/SourceKit.h>
+#import <SourceKitAds/SourceKitAds.h>
 ```
 ```objective-c
 [[HISourceKit sharedKit] stopRecording];
 ```
 
-Calling `stopRecording` will stop SourceKit from submitting any data updates.  If you wish to restart SourceKit at any time, simply call `recordWithAPIKey:inDebugMode:` again as you did the first time.
+Calling `stopRecording` will stop SourceKit from submitting any data updates.  If you wish to restart SourceKit at any time, simply call `recordWithAPIKey:` again as you did the first time.
 
 ***
 
@@ -195,7 +215,7 @@ If you have any other questions please reach out to help@huq.io.
 
 ### Licence
 
-This SourceKit SDK is Copyright 2014-2015 Huq Industries Limited. This SDK is licensed under the Huq Physical Insights Platform Terms of Service, found on the Huq Industries website [here][hq2] (the "License"). You may not use this SDK unless (1) you have registered for an account with Huq, (2) are in possession of a valid API Key from Huq, (3) have agreed the terms of the Licence and (4) are in compliance with the License. Any unauthorised use of this SDK constitutes copyright infringement and violation of law.
+This SourceKit SDK is Copyright 2014-2017 Huq Industries Limited. This SDK is licensed under the Huq Physical Insights Platform Terms of Service, found on the Huq Industries website [here][hq2] (the "License"). You may not use this SDK unless (1) you have registered for an account with Huq, (2) are in possession of a valid API Key from Huq, (3) have agreed the terms of the Licence and (4) are in compliance with the License. Any unauthorised use of this SDK constitutes copyright infringement and violation of law.
 
    [hq1]: <http://dashboard.huq.io>
    [hq2]: <http://huq.io/legals/service-terms.html>
