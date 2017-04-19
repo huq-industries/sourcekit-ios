@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double SourceKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char SourceKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SourceKit/PublicHeader.h>
-#import <SourceKit/HISourceKit.h>
 
+#import <SourceKitAds/HISourceKit.h>
