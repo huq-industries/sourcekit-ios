@@ -31,13 +31,13 @@ with
 Add the following line to your Podspec and run `pod install`
 
 ```sh
-$ pod 'SourceKit'
+$ pod 'SourceKitAds'
 ```
 
 for the non-advertising version, include the following instead:
 
 ```sh
-$ pod 'SourceKitAds'
+$ pod 'SourceKit'
 ```
 
 ---
