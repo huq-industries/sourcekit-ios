@@ -133,7 +133,7 @@ For apps that access location services in the background too, add the key `NSLoc
 
 ### Testing
 
-SourceKit from Huq makes use of APIs that are not available in the simulator. To test your integration of the SourceKit framework, set `-inDebugMode:YES` and test **on your device** while **connected to WiFi**.
+SourceKit from Huq makes use of APIs that are not available in the simulator. Test **on your device** while **connected to WiFi**.
 
 ---
 
