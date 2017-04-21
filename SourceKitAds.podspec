@@ -27,7 +27,7 @@ s.frameworks        = 'CoreLocation','SystemConfiguration','CoreTelephony','AdSu
 
 s.platform     = :ios, '7.0'
 s.requires_arc = true
-s.ios.vendored_frameworks = 'SourceKitAds/Frameworks/SourceKitAds.framework'
+s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKitAds.framework'
 s.deprecated = true
 
 end
