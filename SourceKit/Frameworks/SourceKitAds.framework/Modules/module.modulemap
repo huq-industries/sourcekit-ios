@@ -1,6 +1,0 @@
-framework module SourceKitAds {
-  umbrella header "SourceKitAds.h"
-
-  export *
-  module * { export * }
-}

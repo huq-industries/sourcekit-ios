@@ -1,0 +1,6 @@
+framework module SourceKitLight {
+  umbrella header "SourceKitLight.h"
+
+  export *
+  module * { export * }
+}
