@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "SourceKitLight"
-s.version          = "1.1.2"
+s.version          = "1.1.3"
 s.summary          = "The SourceKit Library is the iOS SDK for use with the Huq physical analytics products."
 
 s.description      = <<-DESC
