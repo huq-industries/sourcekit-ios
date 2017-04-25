@@ -22,7 +22,7 @@ SourceKit is available in two versions - SourceKit and SourceKitLight. Huq enabl
 
 Add the following line to your Podspec and run `pod install`
 
-`$ pod 'SourceKit'` or `$ pod 'SourceKitLight'`
+`pod 'SourceKit'` or `pod 'SourceKitLight'`
  
 
 ---
@@ -49,9 +49,7 @@ following line:
 
 SourceKit:
 
-```objective-c
-#import <SourceKit/HISourceKit.h>
-```
+`#import <SourceKit/HISourceKit.h>` or `#import <SourceKitLight/HISourceKit.h>`
 
 In your AppDelegate, add the following line to the `func
 application(application: UIApplication, didFinishLaunchingWithOptions
@@ -67,9 +65,8 @@ HISourceKit.sharedKit().recordWithAPIKey("<API_Key>")
 In your `AppDelegate.m` file, import the SourceKit library by adding the
 following line:
 
-```objective-c
-#import <SourceKit/SourceKit.h>
-```
+`#import <SourceKit/SourceKit.h>` or `#import <SourceKitLight/SourceKitLight.h>`
+
 And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` method, just add the following:
 
 ```objective-c
@@ -146,9 +143,8 @@ HISourceKit.sharedKit().logCustomEventWithTags([userDoingSomething])
 
 #### Objective-C
 
-```objective-c
-#import <SourceKit/SourceKit.h>
-```
+`#import <SourceKit/SourceKit.h>` or `#import <SourceKitLight/SourceKitLight.h>`
+
 ```objective-c
 // Create a String that describes a user action
 static NSString *userDoingSomething = @"User doing something";
@@ -173,9 +169,8 @@ HISourceKit.sharedKit().stopRecording()
 
 #### Objective-C
 
-```objective-c
-#import <SourceKit/SourceKit.h>
-```
+`#import <SourceKit/SourceKit.h>` or `#import <SourceKitLight/SourceKitLight.h>`
+
 ```objective-c
 [[HISourceKit sharedKit] stopRecording];
 ```
