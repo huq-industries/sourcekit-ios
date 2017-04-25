@@ -12,19 +12,9 @@ To get started with SourceKit by Huq you'll first need to register and grab an A
 
 ## Which version to use
 
-SourceKit is available in two versions - SourceKit and SourceKitAds. If you run advertising in your application, you should use SourceKitAds as this will enable further enrichment of the data. The SDK will not conflict with other advertising frameworks and will not serve advertisements itself. Otherwise, you should use SourceKit.
+SourceKit is available in two versions - SourceKit and SourceKitLight. Huq enables advertisers to perform attribution and in order to do this, SourceKit, the primary version of the SDK uses the IDFA. Using this property requires that you acknowledge it when submitting your application as shown in the screenshot below. You should select Yes for 'Does this app use the Advertising Identifier (IDFA)?', and also select the 'Attribute this app installation to a previously served advertisement' option. SourceKit enables the limit add tracking option. If you would prefer that we did not collect the IDFA, then you should use the SourceKitLight SDK.
 
-To keep this guide concise, all the examples listed here use the SourceKitAds framework, if you are not running advertisements then simply replace instances of 
-
-Header : ```<SourceKitAds/SourceKitAds.h>```
-
-Main Class : ```<SourceKitAds/HISourceKit.h>```
-
-with
-
-Header : ```<SourceKit/SourceKit.h>```
-
-Main Class : ```<SourceKit/HISourceKit.h>```
+![idfa declaration](/images/IDFA.png)
 
 ***
 
@@ -33,18 +23,18 @@ Main Class : ```<SourceKit/HISourceKit.h>```
 Add the following line to your Podspec and run `pod install`
 
 ```sh
-$ pod 'SourceKitAds'
-```
-
-for the non-advertising version, include the following instead:
-
-```sh
 $ pod 'SourceKit'
 ```
 
----
+for the non IDFA version, include the following instead:
 
-### Initialising SourceKit
+```sh
+$ pod 'SourceKitLight'
+```
+
+### Importing the 
+
+---
 
 #### Swift
 
@@ -66,8 +56,10 @@ it is in the project subdirectory, the path will be
 You should import the SourceKit library in the bridging header by adding the
 following line:
 
+SourceKit:
+
 ```objective-c
-#import <SourceKitAds/HISourceKit.h>
+#import <SourceKit/HISourceKit.h>
 ```
 
 In your AppDelegate, add the following line to the `func
@@ -85,7 +77,7 @@ In your `AppDelegate.m` file, import the SourceKit library by adding the
 following line:
 
 ```objective-c
-#import <SourceKitAds/SourceKitAds.h>
+#import <SourceKit/SourceKit.h> / <SourceKitLight/SourceKitLight.h>
 ```
 And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` method, just add the following:
 
@@ -164,7 +156,7 @@ HISourceKit.sharedKit().logCustomEventWithTags([userDoingSomething])
 #### Objective-C
 
 ```objective-c
-#import <SourceKitAds/SourceKitAds.h>
+#import <SourceKit/SourceKit.h>
 ```
 ```objective-c
 // Create a String that describes a user action
@@ -191,7 +183,7 @@ HISourceKit.sharedKit().stopRecording()
 #### Objective-C
 
 ```objective-c
-#import <SourceKitAds/SourceKitAds.h>
+#import <SourceKit/SourceKit.h>
 ```
 ```objective-c
 [[HISourceKit sharedKit] stopRecording];
