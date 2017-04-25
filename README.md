@@ -10,7 +10,9 @@ Huq Industries Real-world Analytics for mobile apps reveals where your users sho
 
 To get started with SourceKit by Huq you'll first need to register and grab an API key from [Huq Industries' Physical Analytics][hq1] console, then follow the simple steps below.
 
-## Which version to use
+---
+
+### Which version to use
 
 SourceKit is available in two versions - SourceKit and SourceKitLight. Huq enables advertisers to perform attribution and in order to do this, SourceKit, the primary version of the SDK uses the IDFA. Using this property requires that you acknowledge it when submitting your application as shown in the 'Submission' section below.  SourceKit enables the limit add tracking option. If you would prefer that we did not collect the IDFA, then you should use the SourceKitLight version. In this case, the only code that should be change is the Cocoapods include and the library import, using the library once imported is independent of version.
 
@@ -24,6 +26,8 @@ Add the following line to your Podspec and run `pod install`
  
 
 ---
+
+### Initialisation
 
 #### Swift
 
@@ -175,6 +179,8 @@ HISourceKit.sharedKit().stopRecording()
 ```
 
 Calling `stopRecording` will stop SourceKit from submitting any data updates.  If you wish to restart SourceKit at any time, simply call `recordWithAPIKey:` again as you did the first time.
+
+---
 
 ### App submission
 
