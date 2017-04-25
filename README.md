@@ -12,27 +12,18 @@ To get started with SourceKit by Huq you'll first need to register and grab an A
 
 ## Which version to use
 
-SourceKit is available in two versions - SourceKit and SourceKitLight. Huq enables advertisers to perform attribution and in order to do this, SourceKit, the primary version of the SDK uses the IDFA. Using this property requires that you acknowledge it when submitting your application as shown in the screenshot below. You should select Yes for 'Does this app use the Advertising Identifier (IDFA)?', and also select the 'Attribute this app installation to a previously served advertisement' option. SourceKit enables the limit add tracking option. If you would prefer that we did not collect the IDFA, then you should use the SourceKitLight SDK.
+SourceKit is available in two versions - SourceKit and SourceKitLight. Huq enables advertisers to perform attribution and in order to do this, SourceKit, the primary version of the SDK uses the IDFA. Using this property requires that you acknowledge it when submitting your application as shown in the screenshot below. You should select Yes for 'Does this app use the Advertising Identifier (IDFA)?', and also select the 'Attribute this app installation to a previously served advertisement' option. SourceKit enables the limit add tracking option. If you would prefer that we did not collect the IDFA, then you should use the SourceKitLight version. In this case, the only code that should be change is the Cocoapods include and the library import, using the library once imported is independent of version.
 
 ![idfa declaration](/images/IDFA.png)
 
-***
+---
 
 ### Install using Cocoapods
 
 Add the following line to your Podspec and run `pod install`
 
-```sh
-$ pod 'SourceKit'
-```
-
-for the non IDFA version, include the following instead:
-
-```sh
-$ pod 'SourceKitLight'
-```
-
-### Importing the 
+`$ pod 'SourceKit'` or `$ pod 'SourceKitLight'`
+ 
 
 ---
 
@@ -77,7 +68,7 @@ In your `AppDelegate.m` file, import the SourceKit library by adding the
 following line:
 
 ```objective-c
-#import <SourceKit/SourceKit.h> / <SourceKitLight/SourceKitLight.h>
+#import <SourceKit/SourceKit.h>
 ```
 And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` method, just add the following:
 
