@@ -85,9 +85,8 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 
 In order for the Huq SDK to operate efficiently, your app must make use of Backgrouund Location Services.
 
-Please follow Apple's instructions on how to implement location services:
+Please follow [Apple's instructions][hq3] on how to implement location services:
 
-<https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization>
 
 ---
 
@@ -174,3 +173,4 @@ This SourceKit SDK is Copyright 2014-2017 Huq Industries Limited. This SDK is li
 
    [hq1]: <http://dashboard.huq.io>
    [hq2]: <http://huq.io/legals/service-terms.html>
+   [hq3:<https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization>
