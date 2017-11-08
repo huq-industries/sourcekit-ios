@@ -81,38 +81,13 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 
 ---
 
-### Using location services
+**Using location services**
 
-Huq Industries' SourceKit SDK, among other things, makes use of location
-services to generate Physical Insights. For versions prior to iOS 8, calling 
-```objective-c
-[[HISourceKit sharedKit] recordWithAPIKey:@“<API_Key>”];
-```
-will automatically request the necessary location permissions. If you would
-prefer that this request is made later in the applicaiton flow, then simply
-call this method at that point.
+In order for the Huq SDK to operate efficiently, your app must make use of Backgrouund Location Services.
 
-Since iOS 8 this has become a little more nuanced, so steps to configure location services in iOS 8+ as follows:
+Please follow Apple's instructions on how to implement location services:
 
-**Using location services in iOS 8+**
-
-To make use of location services, you need to first configure your project’s `Info.plist`.
-
-* right-click on the plist inspector, and select add row
-* in the key field, add the key for the mode you require
-* say why your app makes use of location services
-
-
-**Foreground only apps**
-
-For apps that access location services in the foreground only, add the key
-`NSLocationWhenInUseUsageDescription` to your `Info.plist`. Then in your class,
-import CoreLocation as normal, configure `CLLocationManager` as you wish and
-remember to call `requestWhenInUseAuthorization` you're ready to go.
-
-**Foreground and background apps**
-
-For apps that access location services in the background too, add the key `NSLocationAlwaysUsageDescription` to your `Info.plist`. Then in your class, import CoreLocation as normal, configure `CLLocationManager` as you wish and remember to call `requestAlwaysAuthorization` when you're ready to go.
+<https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization>
 
 ---
 
@@ -121,17 +96,6 @@ For apps that access location services in the background too, add the key `NSLoc
 SourceKit from Huq makes use of APIs that are not available in the simulator. Test **on your device** while **connected to WiFi**.
 
 ---
-
-### Advanced usage
-
-You can overlay Huq Industries' Physical Insight events with your own by adding
-`Custom Events`, arbitrary tags to describe what your user is doing in your
-app.  For example, you might interest you to know that *'most users* `[carry
-out a certain action in-app]` *when they're* `[at home, or at work, or
-wheverver]`'. The following example shows how you layer Huq’s Insight events
-with your own Custom Event tags to indicate what a user was doing in your app
-at that time. Event tags that you log are recorded together with the next Huq
-event that is submitted.
 
 #### Swift
 
