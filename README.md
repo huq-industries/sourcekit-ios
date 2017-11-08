@@ -173,4 +173,4 @@ This SourceKit SDK is Copyright 2014-2017 Huq Industries Limited. This SDK is li
 
    [hq1]: <http://dashboard.huq.io>
    [hq2]: <http://huq.io/legals/service-terms.html>
-   [hq3:<https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization>
+   [hq3]:<https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization>
