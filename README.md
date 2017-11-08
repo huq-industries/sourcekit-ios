@@ -81,7 +81,7 @@ And then in your `AppDelegate`'s `-application:didFinishLaunching:withOptions:` 
 
 ---
 
-**Using location services**
+### Using location services
 
 In order for the Huq SDK to operate efficiently, your app must make use of Backgrouund Location Services.
 
