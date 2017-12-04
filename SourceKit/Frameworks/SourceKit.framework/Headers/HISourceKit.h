@@ -44,6 +44,8 @@ extern NSString * const kHuqAPIVersion;
 
 - (void) stopRecording;
 
+- (void)printStatus;
+
 /**
  *
  *  Custom Event Tags
