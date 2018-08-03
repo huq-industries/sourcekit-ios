@@ -10,9 +10,6 @@
 
 @interface HISourceKit : NSObject
 
-extern NSString * const kHuqEndpoint;
-extern NSString * const kHuqAPIVersion;
-
 /**
  *  Singleton class instance
  */
@@ -43,19 +40,6 @@ extern NSString * const kHuqAPIVersion;
  */
 
 - (void) stopRecording;
-
-/**
- *
- *  Custom Event Tags
- *
- *  You can overlay the request by adding tags to describe what the user is doing in the app.
- *  These tags are implemented on a one-time basis, ie. reset after the request is submitted.
- *
- *  [[SourceKit sharedKit] logCustomEventWithTags:@[@"App_Transaction_Checkout", @"Other_Tags"];
- *
- */
-
-- (void) logCustomEventWithTags:(NSArray *)tags;
 
 - (void) submitAdvertisingID:(BOOL)shouldSubmit;
 
