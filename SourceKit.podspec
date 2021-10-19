@@ -24,7 +24,10 @@ s.license          = 'All rights reserved'
 s.author           = { "Huq Industries" => "isambard@huq.io" }
 s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag=>s.version.to_s}
 s.frameworks        = 'CoreLocation','SystemConfiguration','CoreTelephony','AdSupport'
-
+s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 s.platform     = :ios, '9.0'
 s.requires_arc = true
 s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKit.framework'
