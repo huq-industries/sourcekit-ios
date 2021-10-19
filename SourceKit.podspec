@@ -25,7 +25,7 @@ s.author           = { "Huq Industries" => "isambard@huq.io" }
 s.source           = { :git => "https://github.com/huq-industries/sourcekit-ios.git", :tag=>s.version.to_s}
 s.frameworks        = 'CoreLocation','SystemConfiguration','CoreTelephony','AdSupport'
 
-s.platform     = :ios, '7.0'
+s.platform     = :ios, '9.0'
 s.requires_arc = true
 s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKit.framework'
 
