@@ -41,22 +41,9 @@
 
 - (void) stopRecording;
 
+/*
+ We leave this method in just in case anyone still uses it, but it no longer has functionality since we never submit the IDFA.
+*/
 - (void) submitAdvertisingID:(BOOL)shouldSubmit;
-
-- (void)startAccelerometerUpdates;
-- (void)stopAccelerometerUpdates;
-- (void)buildAccelerometerConstruct;
-- (void)teardownAccelerometerConstruct;
-- (void)startGyroUpdates;
-- (void)stopGyroUpdates;
-- (void)buildGyroConstruct;
-- (void)teardownGyroConstruct;
-- (void)startMagnetometerUpdates;
-- (void)stopMagnetometerUpdates;
-- (void)interpolateOrientation;
-- (void)buildPositionalInterpolationConstruct;
-- (void)teardownPositionalInterpolationConstruct;
-- (void)dispatchSilentPositionalPush;
-- (void)respondToSilentPositionalPush;
 
 @end
