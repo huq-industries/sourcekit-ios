@@ -8,52 +8,40 @@
 		<data>
 		Brqx0+vY6kpPAcPhwN2L9Nv1QU4=
 		</data>
-		<key>Headers/SourceKit.h</key>
+		<key>Headers/SourceKitXCFramework.h</key>
 		<data>
-		ufRSy5ZwT7BAh/XlXIvMu/GHRI0=
+		Mqi+gE0pNWmDiZVYr0SrnFjuUs8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ut5JBNzBdqaC+8S9kC1KrzCAXBo=
+		xPKladWqdKJ378ykXF6N/hfUv2w=
 		</data>
-		<key>Modules/module.modulemap</key>
+		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		p4MRhf/+6XmuBwGZSuMatPnmj4w=
+		MZjEkwYezR3pmy89C0AETGGXkfI=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/HISourceKit.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Brqx0+vY6kpPAcPhwN2L9Nv1QU4=
-			</data>
 			<key>hash2</key>
 			<data>
 			Bye9axz0RLg5mdkjIX38m3bh9Z1cs/zlMhke88ttrwU=
 			</data>
 		</dict>
-		<key>Headers/SourceKit.h</key>
+		<key>Headers/SourceKitXCFramework.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ufRSy5ZwT7BAh/XlXIvMu/GHRI0=
-			</data>
 			<key>hash2</key>
 			<data>
-			XTw3cH3MugDAK6Xseo2WN77MGY5ozIzMjcOGBiQXW2I=
+			RAr1wZWZhWHK4ho+jKqLQbUWzWKuJ5O+iEOLQqsYrks=
 			</data>
 		</dict>
-		<key>Modules/module.modulemap</key>
+		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			p4MRhf/+6XmuBwGZSuMatPnmj4w=
-			</data>
 			<key>hash2</key>
 			<data>
-			awxsHlYe7oVy5X+ZyK3z3/lrKR1IJDrNoKaK3s7cpqA=
+			NpKSS6B0zhQWkP9qQz8N9Xvl4VhvI/gwCypLdV8af1k=
 			</data>
 		</dict>
 	</dict>
