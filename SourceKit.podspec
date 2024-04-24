@@ -30,6 +30,6 @@ s.pod_target_xcconfig = {
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 s.platform     = :ios, '11.0'
 s.requires_arc = true
-s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKit.framework'
+s.ios.vendored_frameworks = 'SourceKit/Frameworks/SourceKit.xcframework'
 
 end
